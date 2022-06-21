@@ -13,12 +13,12 @@ public class EmpWage {
 		int workingDays = 20;
 		int isPresent = (int) Math.floor(Math.random() * 10) % 3;
 		switch (isPresent) {
-		case 0:
+		case 1:
 			System.out.println("Employee is Prsent");
 			System.out.println("Employee earn = " + numberOfHours * wagePerHour);
 			System.out.println("Employee Monthly Earn = " + (numberOfHours * wagePerHour) * workingDays);
 			break;
-		case 1:
+		case 2:
 			System.out.println("Employee is Present");
 			System.out.println("Employee earn = " + numberOfHours * wagePerHour);
 			System.out.println("Employee earn with PartTime= " + partTimeHours * wagePerHour);
@@ -26,7 +26,7 @@ public class EmpWage {
 			System.out.println(
 					"Employee Monthly Earn = " + ((numberOfHours + partTimeHours) * wagePerHour) * workingDays);
 			break;
-		case 2:
+		case 0:
 			System.out.println("Employee is not Present");
 			System.out.println("Employee earn = 0");
 			break;
